@@ -4,7 +4,8 @@
   "description": "find cute dogs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack -w & nodemon index"
   },
   "keywords": [
     "cute",
@@ -14,5 +15,26 @@
     "puppy"
   ],
   "author": "brittany chu",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bsc2120/find-cute-dogs.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "morgan": "^1.9.0",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^3.11.0"
+  }
 }
