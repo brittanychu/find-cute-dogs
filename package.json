@@ -23,9 +23,13 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "native-base": "^2.2.0",
     "path": "^0.12.7",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-native": "^0.53.3",
+    "react-native-base": "^1.1.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -34,7 +38,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "morgan": "^1.9.0",
-    "react-router-dom": "^4.2.2",
     "webpack": "^3.11.0"
   }
 }
