@@ -23,12 +23,12 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "instafeed.js": "^1.4.1",
     "native-base": "^2.2.0",
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.53.3",
-    "react-native-base": "^1.1.0",
+    "react-instafeed": "^0.4.0",
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
