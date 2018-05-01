@@ -23491,6 +23491,8 @@ var _reactInstafeed = __webpack_require__(78);
 
 var _reactInstafeed2 = _interopRequireDefault(_reactInstafeed);
 
+var _secrets = __webpack_require__(80);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23498,9 +23500,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var accessToken = "1328896.fc743b9.34ea0558e80a4696839efae1a9d19038";
-var clientId = "fc743b9e8dab4104ac15f992a8c1db31";
 
 var Home = function (_Component) {
   _inherits(Home, _Component);
@@ -23512,37 +23511,35 @@ var Home = function (_Component) {
   }
 
   _createClass(Home, [{
-    key: 'render',
+    key: "render",
     value: function render() {
-      var instafeedTarget = 'instafeed';
+      var instafeedTarget = "instafeed";
       return _react2.default.createElement(
-        'div',
-        { id: 'puppies' },
+        "div",
+        { id: "puppies" },
         _react2.default.createElement(
-          'title',
+          "title",
           null,
-          ' ',
           _react2.default.createElement(
-            'h1',
+            "h1",
             null,
-            ' Here are some puppies '
-          ),
-          ' '
+            " Here are some puppies "
+          )
         ),
         _react2.default.createElement(
-          'div',
+          "div",
           { id: instafeedTarget },
           _react2.default.createElement(_reactInstafeed2.default, {
-            limit: '5',
-            ref: 'instafeed',
-            resolution: 'standard_resolution',
-            sortBy: 'most-recent',
+            limit: "5",
+            ref: "instafeed",
+            resolution: "standard_resolution",
+            sortBy: "most-recent",
             target: instafeedTarget,
-            template: '',
-            tagName: 'puppies',
-            userId: 'userIdInstagramApiString',
-            clientId: '' + clientId,
-            accessToken: '' + accessToken
+            template: "",
+            tagName: "puppies",
+            userId: "userIdInstagramApiString",
+            clientId: "" + _secrets.clientId,
+            accessToken: "" + _secrets.accessToken
           })
         )
       );
@@ -24011,6 +24008,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
   });
 
 }).call(this);
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//export const accessToken = "1328896.fc743b9.34ea0558e80a4696839efae1a9d19038";
+const accessToken = "87b4666da68843ebb5313560e7c4ae2a";
+/* harmony export (immutable) */ __webpack_exports__["accessToken"] = accessToken;
+
+
+const clientId = "fc743b9e8dab4104ac15f992a8c1db31";
+/* harmony export (immutable) */ __webpack_exports__["clientId"] = clientId;
+
 
 
 /***/ })
